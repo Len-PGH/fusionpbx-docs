@@ -18,6 +18,25 @@ Although the new install script configured IPTables for you it is recommended th
 
  iptables -L
 
+SSL / TLS
+^^^^^^^^^^
+
+SSL and TLS are very necessary in today's internet applications from VOIP to Websites.  There are expensive services you can purchase for SSL certificates, default self signed certificate and free options.  `Let's Encrypt`_ is one of the free options.
+
+* `Setup Let's Encrypt with FusionPBX`_ 
+
+
+
+SSL / TLS
+^^^^^^^^^^
+
+SSL and TLS are very necessary in today's internet applications from VOIP to Websites. FusionPBX by default uses a self signed certificate. However you can use certificate providers where you can purchase certificates and there are free options as well. With domain based multi-tenant wildcard certificates can be useful. Also when deciding on which certificate provider to use you should look at the phones manufacturers documentation to find one that is compatible HTTPS provisioning.
+
+`Let's Encrypt`_ provides free certificates for a single domain but they don't support wildcard certificates.
+
+* `Setup Let's Encrypt with FusionPBX`_ 
+
+
 
 Upgrade
 ^^^^^^^^
@@ -65,6 +84,10 @@ Use strong passwords with SSH or even better use SSH keys for better protection 
 
 .. _Upgrade: /en/latest/getting_started/advanced/upgrade.html
 .. _Upgrades: /en/latest/getting_started/advanced/upgrade.html
+.. _link: https://www.nginx.com/blog/free-certificates-lets-encrypt-and-nginx
 .. _paid support: http://www.fusionpbx.com
-.. _firewall: /en/latest/getting_started/post_installation.html#iptables
-.. _iptables: /en/latest/getting_started/post_installation.html#iptables
+.. _firewall: /en/latest/getting_started/iptables.html#iptables
+.. _iptables: /en/latest/getting_started/iptables.html#iptables
+.. _Verto Communicator: https://freeswitch.org/confluence/display/FREESWITCH/Verto+Communicator
+.. _Setup Let's Encrypt with FusionPBX: /en/latest/getting_started/lets_encrypt.html
+.. _Let's Encrypt: https://letsencrypt.org/docs
